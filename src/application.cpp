@@ -19,6 +19,8 @@
 // Threading is required to be able to time out connecting to the cellular network
 SYSTEM_THREAD(ENABLED);
 SYSTEM_MODE(MANUAL);
+STARTUP(cellular_credentials_set("fp.com.attz", "", "", NULL));
+
 
 // CONFIGURATION ===================================================================================
 
